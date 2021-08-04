@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mactive"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="screen"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.WifiProbe.AppBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:minHeight="20dp"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constlayout_wifiactive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.5">
+
+                <include
+                    android:id="@+id/wifiactive_item"
+                    layout="@layout/wifi_active_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Theme.WifiProbe.PopupOverlay">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/bnStartScan"
+                        android:layout_width="54dp"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="8dp"
+                        android:background="?attr/selectableItemBackground"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/ic_baseline_wifi_24" />
+
+                    <TextView
+                        android:id="@+id/tvStartScanTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/start_scan"
+                        android:textColor="?android:attr/colorAccent"
+                        android:textSize="10sp"
+                        app:layout_constraintLeft_toLeftOf="@id/bnStartScan"
+                        app:layout_constraintRight_toRightOf="@id/bnStartScan"
+                        app:layout_constraintTop_toBottomOf="@id/bnStartScan" />
+
+                    <ProgressBar
+                        android:id="@+id/progBarScanning"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:indeterminate="true"
+                        android:visibility="invisible"
+                        app:layout_constraintBaseline_toBaselineOf="@id/bnStartScan"
+                        app:layout_constraintLeft_toRightOf="@id/bnStartScan" />
+
+                    <TextView
+                        android:id="@+id/tvPassTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?android:attr/colorAccent"
+                        android:textSize="10sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStartScanTitle"
+                        app:layout_constraintLeft_toLeftOf="@id/progBarScanning"
+                        app:layout_constraintRight_toRightOf="@id/progBarScanning" />
+
+                    <ImageButton
+                        android:id="@+id/bnRepeatScan"
+                        android:layout_width="45dp"
+                        android:layout_height="41dp"
+                        android:layout_marginStart="35dp"
+                        android:background="?attr/selectableItemBackground"
+                        app:layout_constraintStart_toEndOf="@+id/progBarScanning"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/ic_baseline_repeat_24" />
+
+                    <TextView
+                        android:id="@+id/tvRepeatScanTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/loop_scan"
+                        android:textColor="?android:attr/colorAccent"
+                        android:textSize="10sp"
+                        android:tooltipText="Repeats the 'Start Scan' 10 times"
+                        app:layout_constraintLeft_toLeftOf="@id/bnRepeatScan"
+                        app:layout_constraintRight_toRightOf="@id/bnRepeatScan"
+                        app:layout_constraintTop_toBottomOf="@id/bnRepeatScan" />
+
+                    <TextView
+                        android:id="@+id/tvWifiIsOffTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_wifi_not_connected"
+                        android:textColor="@color/fg_wifi_not_connected"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@id/bnRepeatScan"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include_recview"
+        layout="@layout/content_main" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

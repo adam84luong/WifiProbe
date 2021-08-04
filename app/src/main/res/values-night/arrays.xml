@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="delay_pass2_entries">
+        <item>No pass 2 execute</item>
+        <item>Delay 3 sec</item>
+        <item>Delay 4 sec</item>
+        <item>Delay 5 sec</item>
+        <item>Delay 6 sec</item>
+        <item>Delay 10 sec</item>
+        <item>Delay 12 sec</item>
+    </string-array>
+
+    <string-array name="delay_pass2_values">
+        <item>0</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>10000</item>
+        <item>12000</item>
+    </string-array>
+
+    <string-array name="wifi_panel_scan_stay_time_entries">
+        <item>Time 300 ms</item>
+        <item>Time 400 ms</item>
+        <item>Time 500 ms</item>
+        <item>Time 600 ms</item>
+        <item>Time 800 ms</item>
+        <item>Time 1000 ms</item>
+        <item>Time 1500 ms</item>
+    </string-array>
+
+    <string-array name="wifi_panel_scan_stay_time_values">
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+    </string-array>
+
+    <string-array name="day_night_mode_entries">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>System default (>= Android Q 10)</item>
+    </string-array>
+    <string-array name="day_night_mode_values">
+        <item>MODE_NIGHT_NO</item>
+        <item>MODE_NIGHT_YES</item>
+        <item>MODE_NIGHT_FOLLOW_SYSTEM</item>
+    </string-array>
+</resources>

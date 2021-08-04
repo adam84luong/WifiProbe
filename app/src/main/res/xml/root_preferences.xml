@@ -1,0 +1,58 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:asp="http://schemas.android.com/tools"
+    android:theme="@style/Theme.WifiProbe">
+
+    <!-- See res/layout/settings_activity.xml as container -->
+    <PreferenceCategory app:title="@string/comm_header">
+
+        <ListPreference
+            app:defaultValue="MODE_NIGHT_YES"
+            app:dialogIcon="@drawable/ic_baseline_dark_mode_24"
+            app:entries="@array/day_night_mode_entries"
+            app:entryValues="@array/day_night_mode_values"
+            app:icon="@drawable/ic_baseline_dark_mode_24"
+            app:key="day_night_mode"
+            app:title="@string/darkmode_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="6000"
+            app:dialogIcon="@drawable/ic_baseline_timelapse_24"
+            app:entries="@array/delay_pass2_entries"
+            app:entryValues="@array/delay_pass2_values"
+            app:icon="@drawable/ic_baseline_timelapse_24"
+            app:key="delay_msec_pass_2"
+            app:title="@string/delay_pass2_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SeekBarPreference
+            android:key="number_of_repeats"
+            android:max="30"
+            android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:title="@string/loop_num_of_repeats"
+            app:icon="@drawable/ic_baseline_repeat_24"
+            app:showSeekBarValue="true" />
+
+        <SeekBarPreference
+            android:key="delay_between_repeats"
+            android:max="10"
+            android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:title="@string/loop_delay_repeats"
+            app:icon="@drawable/ic_baseline_repeat_24"
+            app:showSeekBarValue="true" />
+
+
+        <ListPreference
+            app:defaultValue="300"
+            app:dialogIcon="@drawable/ic_baseline_access_time_filled_24"
+            app:dialogTitle="@string/wifi_panel_scan_stay_time_sub"
+            app:entries="@array/wifi_panel_scan_stay_time_entries"
+            app:entryValues="@array/wifi_panel_scan_stay_time_values"
+            app:icon="@drawable/ic_baseline_access_time_filled_24"
+            app:key="wifi_panel_scan_stay_time"
+            app:title="@string/wifi_panel_scan_stay_time"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

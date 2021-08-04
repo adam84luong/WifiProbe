@@ -1,0 +1,91 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WifiProbe.AppBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_800</item>
+        <item name="colorPrimaryVariant">@color/primary_800</item>
+        <item name="colorOnPrimary">@color/primary_800</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/second_400</item>
+        <item name="colorSecondaryVariant">@color/second_600</item>
+        <item name="colorOnSecondary">@color/second_600</item>
+        <item name="colorAccent">@color/second_100</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">@color/second_700</item>
+    </style>
+
+    <style name="Theme.WifiProbe" parent="Theme.MaterialComponents.DayNight">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/primary1000</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary1000</item>
+        <item name="colorPrimaryVariant">@color/primary_900</item>
+        <item name="colorSecondary">@color/second_700</item>
+        <item name="colorSecondaryVariant">@color/second_900</item>
+    </style>
+
+    <!-- Foreground Color for current active wifi item and content card view -->
+    <color name="fg_wifiactive">#001b5c</color>
+    <!-- Background Color for current active wifi items and for the card view -->
+    <color name="bg_wifiactive_cdview">#d9fffe</color>
+
+    <!-- Background Color for wifi items and for the card view -->
+    <color name="bg_wifi_items_cdview">#e8e8e8</color>
+
+    <!-- Foreground Color back button (arrow) -->
+    <color name="fg_back_button">@color/second_400</color>
+
+    <!-- Foreground Colors for current active wifi details -->
+    <color name="fg_active_wifi_details1">#5700d3</color>
+    <color name="bg_active_wifi_details1">#fdfdfd</color>
+
+    <!-- Background Color for list with configured networks -->
+    <color name="bg_configNetworks">@color/second_200</color>
+    <color name="bg_configNetworksEnd">@color/second_600</color>
+    <color name="color_spin_items_stroke">#ab3a00</color>
+
+    <!-- Color for Dialog Wifi Detail -->
+    <color name="fg_dialog_wifi_detail_disabled">#666666</color>
+
+    <!-- Color for Warning Wifi not connected -->
+    <color name="bg_wifi_not_connected">#2873c7</color>
+    <color name="fg_wifi_not_connected">#fff1ef</color>
+
+    <style name="Theme.WifiProbe.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.WifiProbe.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
+
+
+    <!--Top level DayNight theme to be used in AndroidManifest.xml
+    Suggested color attributes
+https://github.com/material-components/material-components-android-examples/blob/develop/MaterialThemeBuilder/app/src/main/res/values/themes.xml
+<style name="Theme.MyApp" parent="Base.Theme.MyApp"/>
+    Base custom theme which will be shared between both light and dark theme variants
+<style name="Base.Theme.MyApp" parent="Base.Theme.MaterialThemeBuilder">
+Material color attributes (light theme)
+colorPrimary colors map to components and elements, such as app bars and buttons.
+colorSecondary colors are most often used as accents on components, such as FABs and
+selection controls.
+<item name="colorPrimary">@color/purple_500</item>
+<item name="colorPrimaryVariant">@color/purple_700</item>
+<item name="colorSecondary">@color/green_200</item>
+<item name="colorSecondaryVariant">@color/green_500</item>
+colorBackground appears behind scrollable content and is used for the default window
+background. colorSurface is mapped to the surface of components such as cards, sheets
+and menus. colorError is used to indicate an error state for components such as text fields.
+<item name="android:colorBackground">@color/white_50</item>
+<item name="colorSurface">@color/white_50</item>
+<item name="colorError">@color/red_600</item>
+"On" colors define how text, icons and strokes are colored in relation to the surface
+on which they appear.
+<item name="colorOnPrimary">@color/white_50</item>
+<item name="colorOnSecondary">@color/black_900</item>
+<item name="colorOnBackground">@color/black_900</item>
+<item name="colorOnSurface">@color/black_900</item>
+<item name="colorOnError">@color/white_50</item>
+-->

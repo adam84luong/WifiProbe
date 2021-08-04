@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/Theme.WifiProbe">
+    <item
+        android:id="@+id/wifi_details"
+        android:title="@string/wifi_details" />
+
+    <!-- Not visible for >=Build.VERSION_CODES.Q set in MainActivity,
+         setOnCreateContextMenuListener{} -->
+    <item
+        android:id="@+id/connect_configured_wifi"
+        android:title="@string/connect_configured_network" />
+
+    <item
+        android:id="@+id/panel_wifi"
+        android:title="@string/network_wifi_panel" />
+</menu>

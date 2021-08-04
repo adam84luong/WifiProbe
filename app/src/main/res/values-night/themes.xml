@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WifiProbe.AppBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_900</item>
+        <item name="colorPrimaryVariant">@color/primary_900</item>
+        <item name="colorOnPrimary">@color/primary_900</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/second_300</item>
+        <item name="colorSecondaryVariant">@color/second_500</item>
+        <item name="colorOnSecondary">@color/second_500</item>
+        <item name="colorAccent">@color/second_100</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSecondaryVariant</item>
+        <item name="android:textColor">@color/primary_400</item>
+    </style>
+
+    <style name="Theme.WifiProbe" parent="Theme.MaterialComponents.DayNight">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/primary_400</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary_300</item>
+        <item name="colorPrimaryVariant">@color/primary_500</item>
+        <item name="colorSecondary">@color/second_300</item>
+        <item name="colorSecondaryVariant">@color/second_500</item>
+    </style>
+
+    <!-- Foreground Color for current active wifi item and content card view -->
+    <color name="fg_wifiactive">#d1d1d1</color>
+    <!-- Background Color for current active wifi items and for the card view -->
+    <color name="bg_wifiactive_cdview">#0f376b</color>
+
+    <!-- Background Color for wifi items and for the card view -->
+    <color name="bg_wifi_items_cdview">#353535</color>
+
+    <!-- Foreground Color back button (arrow) -->
+    <color name="fg_back_button">@color/second_700</color>
+
+    <!-- Foreground Colors for current active wifi details -->
+    <color name="fg_active_wifi_details1">#7aacff</color>
+    <color name="bg_active_wifi_details1">#3f3f3f</color>
+
+    <!-- Background Color for list with configured networks -->
+    <color name="bg_configNetworks">@color/primary_900</color>
+    <color name="bg_configNetworksEnd">@color/primary1000</color>
+    <color name="color_spin_items_stroke">#08172b</color>
+
+    <!-- Color for Dialog Wifi Detail -->
+    <color name="fg_dialog_wifi_detail_disabled">#A3A3A3</color>
+
+    <!-- Color for Warning Wifi not connected -->
+    <color name="bg_wifi_not_connected">#3c3c3c</color>
+    <color name="fg_wifi_not_connected">#ffffbe</color>
+
+    <style name="Theme.WifiProbe.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.WifiProbe.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
+
+
+    <!--Top level DayNight theme to be used in AndroidManifest.xm
+    Suggested color attributes
+    https://github.com/material-components/material-components-android-examples/blob/develop/MaterialThemeBuilder/app/src/main/res/values-night/themes.xml
+<style name="Theme.MyApp" parent="Base.Theme.MyApp">
+Material color attributes (dark theme)
+<item name="colorPrimary">@color/purple_200</item>
+<item name="colorPrimaryVariant">@color/purple_600</item>
+<item name="colorSecondary">@color/green_200</item>
+<item name="colorSecondaryVariant">@color/green_500</item>
+<item name="android:colorBackground">@color/black_900</item>
+<item name="colorSurface">@color/black_800</item>
+<item name="colorError">@color/red_200</item>
+<item name="colorOnPrimary">@color/black_900</item>
+<item name="colorOnSecondary">@color/black_900</item>
+<item name="colorOnBackground">@color/white_50</item>
+<item name="colorOnSurface">@color/white_50</item>
+<item name="colorOnError">@color/black_900</item>
+<item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+<item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+    -->

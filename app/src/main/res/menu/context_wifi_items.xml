@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/Theme.WifiProbe">
+    <item
+        android:id="@+id/wifi_details"
+        android:title="@string/wifi_details" />
+    <item
+        android:id="@+id/connect_configured_wifi"
+        android:icon="@drawable/ic_baseline_lock_24"
+        android:title="@string/connect_configured_network" />
+    <item
+        android:id="@+id/connect_explicit_ssid"
+        android:title="@string/connect_with_ssid_and_password" />
+</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/* File copied from
+** layout/simple_spinner_item.xml and some changes added.
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Implicit used in spinner in activity_connect_to_configured_network.xml
+-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@drawable/custom_spn_items_bg"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:gravity="center_vertical" />

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <color name="purple_200">#FFBB86FC</color>-->
+    <!--    <color name="purple_500">#FF6200EE</color>-->
+    <!--    <color name="purple_700">#FF3700B3</color>-->
+    <!--    <color name="teal_200">#FF03DAC5</color>-->
+    <!--    <color name="teal_700">#FF018786</color>-->
+    <!--    <color name="black">#FF000000</color>-->
+    <!--    <color name="white">#FFFFFFFF</color>-->
+
+
+    <!--    http://mcg.mbitson.com/#!?mcgpalette0=%233d85c6&themename=mcgtheme-->
+    <!-- blue as primary -->
+    <color name="primary_50">#e8f0f8</color>
+    <color name="primary_100">#c5daee</color>
+    <color name="primary_200">#9ec2e3</color>
+    <color name="primary_300">#77aad7</color>
+    <color name="primary_400">#5a97cf</color>
+    <color name="primary_500">#3d85c6</color>
+    <color name="primary_600">#377dc0</color>
+    <color name="primary_700">#2f72b9</color>
+    <color name="primary_800">#235d9e</color>
+    <color name="primary_900">#16498c</color>
+    <color name="primary_A100">#dae9ff</color>
+    <color name="primary_A200">#a7caff</color>
+    <color name="primary_A400">#74abff</color>
+    <color name="primary_A700">#5b9cff</color>
+    <color name="primary1000">#103463</color>
+    <!-- orange as second -->
+    <color name="second_50">#fdf0e1</color>
+    <color name="second_100">#fad8b5</color>
+    <color name="second_200">#f7bf84</color>
+    <color name="second_300">#f3a553</color>
+    <color name="second_400">#f1912e</color>
+    <color name="second_500">#ee7e09</color>
+    <color name="second_600">#ec7608</color>
+    <color name="second_700">#e96b06</color>
+    <color name="second_800">#e76105</color>
+    <color name="second_900">#e24e02</color>
+    <color name="second_A100">#ffffff</color>
+    <color name="second_A200">#ffe2d6</color>
+    <color name="second_A400">#ffbda3</color>
+    <color name="second_A700">#ffaa8a</color>
+
+    <color name="primaryColor">#0d47a1</color>
+    <color name="primaryLightColor">#5472d3</color>
+    <color name="primaryDarkColor">#002171</color>
+    <color name="secondaryColor">#ff6f00</color>
+    <color name="secondaryLightColor">#ffa040</color>
+    <color name="secondaryDarkColor">#c43e00</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+    <!--  Wifi strength colors  -->
+    <!--  -30 dBm Maximum signal strength. -->
+    <color name="wifi_level_30">#00ff00</color>
+    <!--  -50 dBm Anything down to this level can be considered excellent signal strength. -->
+    <color name="wifi_level_50">#00cc00</color>
+    <!--  -60 dBm Good, reliable signal strength. -->
+    <color name="wifi_level_60">#7aa600</color>
+    <!--  -67 dBm Reliable signal strength. -->
+    <color name="wifi_level_67">#a0a600</color>
+    <!--  -70 dBm Not a strong signal. Light browsing and email. -->
+    <color name="wifi_level_70">#ffb300</color>
+    <color name="wifi_level_80">#ed5b00</color>
+    <color name="wifi_level_90">#e84600</color>
+    <color name="wifi_level_91">#d90000</color>
+
+
+    <!-- EXAMPLE only -->
+    <!-- Suggested colors for the 12 standard color slots -->
+    <!-- https://github.com/material-components/material-components-android-examples/blob/develop/MaterialThemeBuilder/app/src/main/res/values/color.xml -->
+    <color name="purple_200">#bb86fc</color> <!--Color primary (dark)-->
+    <color name="purple_500">#6200ee</color> <!--Color primary (light)-->
+    <color name="purple_600">#4b01d0</color> <!--Color primary variant (dark)-->
+    <color name="purple_700">#3700b3</color> <!--Color primary variant (light)-->
+
+    <color name="green_200">#03dac6</color> <!--Color secondary-->
+    <color name="green_500">#018786</color> <!--Color secondary variant-->
+
+    <color name="red_200">#cf6679</color> <!--Color error (dark)-->
+    <color name="red_600">#b00020</color> <!--Color error (light)-->
+
+    <!--Color surface (light), color on error (light), -->
+    <!--color on surface (dark), color on surface (dark)-->
+    <color name="white_50">#ffffff</color>
+
+    <color name="black_800">#121212</color> <!--Color surface (dark)-->
+    <!--Color on secondary (light), color on background (light),-->
+    <!--color on surface (light)-->
+    <color name="black_900">#000000</color>
+</resources>

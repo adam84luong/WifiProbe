@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_wifi_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/bg_wifi_items_cdview"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rl_wifi_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <TableLayout
+            android:id="@+id/tablelayout_wifi_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_active_wifi_details1">
+
+                <TextView
+                    android:id="@+id/tvWifidBmTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/decibel"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tvMacTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/mac_addr"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="10sp"
+                    android:tooltipText="@string/tooltip_mac_addr" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_active_wifi_details1">
+
+                <TextView
+                    android:id="@+id/tvNumLeveldB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/level"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvMacAddr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/mac"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="14sp"
+                    android:tooltipText="@string/tooltip_mac_addr" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSsidTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_span="2"
+                    android:text="@string/ssid"
+                    android:textColor="@color/fg_active_wifi_details1"
+                    android:textSize="10sp"
+                    android:tooltipText="@string/tooltip_ssid" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSsid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_span="2"
+                    android:text="@string/ssid"
+                    android:textColor="@color/fg_active_wifi_details1"
+                    android:tooltipText="@string/tooltip_ssid" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_active_wifi_details1">
+
+                <TextView
+                    android:id="@+id/tvRouterTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_span="2"
+                    android:text="@string/router_repeater_name"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="10sp"
+                    android:tooltipText="@string/tooltip_router" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_active_wifi_details1">
+
+                <TextView
+                    android:id="@+id/tvRouter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_span="2"
+                    android:text="@string/router"
+                    android:textColor="@color/fg_wifiactive"
+                    android:tooltipText="@string/tooltip_router" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvLinkSpeedTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/link_speed_local_in_mbps"
+                    android:textColor="@color/fg_active_wifi_details1"
+                    android:textSize="10sp"
+                    android:tooltipText="@string/tooltip_linkspeed" />
+
+                <TextView
+                    android:id="@+id/tvIpAddrTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/ip_address"
+                    android:textColor="@color/fg_active_wifi_details1"
+                    android:textSize="10sp"
+                    android:tooltipText="@string/tooltip_ip_addr" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvRxSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/rxspeed"
+                    android:textColor="@color/fg_active_wifi_details1"
+                    android:tooltipText="@string/tooltip_linkspeed" />
+
+                <TextView
+                    android:id="@+id/tvIpAddr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/ipaddr"
+                    android:textColor="@color/fg_active_wifi_details1"
+                    android:tooltipText="@string/tooltip_ip_addr" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_active_wifi_details1">
+
+                <TextView
+                    android:id="@+id/tvFreqTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/frequency"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="10sp"
+                    android:tooltipText="@string/tooltip_freq" />
+
+                <TextView
+                    android:id="@+id/tvChWidthTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/channel_width"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_active_wifi_details1">
+
+                <TextView
+                    android:id="@+id/tvFreq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/ghz"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="14sp"
+                    android:tooltipText="@string/tooltip_freq" />
+
+                <TextView
+                    android:id="@+id/tvChWidth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/channel"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSecurityTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_span="2"
+                    android:text="@string/security"
+                    android:textColor="@color/fg_active_wifi_details1"
+                    android:textSize="10sp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSecurity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_span="2"
+                    android:text="@string/security"
+                    android:textColor="@color/fg_active_wifi_details1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_active_wifi_details1">
+
+                <TextView
+                    android:id="@+id/tvDistTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/router_distance_approx"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="10sp"
+                    android:tooltipText="@string/tooltip_dist" />
+
+                <TextView
+                    android:id="@+id/tvNameTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/operator_friendly_name"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_active_wifi_details1">
+
+                <TextView
+                    android:id="@+id/tvDist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/distance_approx"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="14sp"
+                    android:tooltipText="@string/tooltip_dist" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/operator_friendly_name"
+                    android:textColor="@color/fg_wifiactive"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCloseDialogWifiDetails"
+            android:text="@string/close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tablelayout_wifi_details" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

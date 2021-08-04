@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WifiProbe</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="dBmilliwatt">\u0020[dBm]</string>
+    <string name="wifi_strength">Wifi Strength</string>
+    <string name="decibel">decibel [dBm]</string>
+    <string name="level">Level</string>
+    <string name="mac">MAC</string>
+    <string name="router_repeater_name">Router/Repeater Name</string>
+    <string name="ssid">SSID</string>
+    <string name="router">Router</string>
+    <string name="mac_addr">MAC Addr.</string>
+    <string name="scan_overload">Scanning is not possible at the moment. Please wait a while to a next scan.</string>
+    <string name="scanning">Scanning...</string>
+    <string name="loop_scanning">Stop Loop</string>
+    <string name="scan_pass_1">Pass 1</string>
+    <string name="scan_pass_12">Pass 1 of 2</string>
+    <string name="scan_pass_2">Pass 2</string>
+    <string name="repeat_loop_n">Loop #</string>
+    <string name="wifi_is_disabled">Wifi is disabled. Please enable it.\nScan works only with Wifi on</string>
+    <string name="start_scan">Start Scan</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preferences -->
+    <string name="comm_header">WifiProbe Settings</string>
+    <string name="darkmode_title">Day/Night Mode</string>
+    <string name="delay_pass2_title">Delay in milliseconds until pass 2 starts</string>
+    <string name="go_back">Go Back</string>
+
+    <string name="wifi_details">WIFI Details</string>
+    <string name="connect_configured_network">Connect to a configured network</string>
+    <string name="wifi_password_hint">Wifi Password</string>
+    <string name="connect_button_wificonnect">Connect</string>
+    <string name="ssid_wificonnect">SSID</string>
+    <string name="maintitle_wificonnect">Enter a SSID and Password</string>
+    <string name="connect_with_ssid_and_password">Connect to selected SSID</string>
+    <string name="select_a_configured_network">Select a Configured Network</string>
+    <string name="network_wifi_panel"><![CDATA[Network->Wifi Panel]]></string>
+    <string name="wifi_panel_scan_stay_time">Wifi panel display time (on start scan)</string>
+    <string name="wifi_panel_scan_stay_time_sub">Wifi panel nudge the scan. Slow devices, longer time</string>
+    <string name="security_options">Security Options</string>
+    <string name="security_wpa">WPA</string>
+    <string name="security_wep">WEP</string>
+    <string name="security_open">Open</string>
+    <string name="ipaddr">IpAddr</string>
+    <string name="rxspeed">RxSpeed</string>
+    <string name="ip_address">IP Address</string>
+    <string name="link_speed_local_in_mbps">Link Speed local in Mbps</string>
+    <string name="level_30">Maximum signal strength.</string>
+    <string name="level_50">Anything down to this level can be considered excellent signal strength.</string>
+    <string name="level_60">Good, reliable signal strength.</string>
+    <string name="frequency">Frequency [GHz]</string>
+    <string name="channel_width">Channel Width</string>
+    <string name="ghz">GHz</string>
+    <string name="channel">Channel</string>
+    <string name="level_67">Reliable signal strength.</string>
+    <string name="level_70">Not a strong signal. Light browsing and email.</string>
+    <string name="level_80">Unreliable signal strength, will not suffice for most services.</string>
+    <string name="level_90">The chances of even connecting are very low at this level.</string>
+    <string name="level_91">Very low signal.</string>
+    <string name="security">Security capabilities</string>
+    <string name="router_distance_approx">Router distance (approx.)</string>
+    <string name="distance_approx">Distance approx.</string>
+    <string name="operator_friendly_name">Operator friendly name</string>
+    <string name="close">Close</string>
+    <string name="tooltip_mac_addr">Media-Access-Control-Address.</string>
+    <string name="tooltip_ssid">SSID Name (Service Set Identifier).</string>
+    <string name="tooltip_router">Router or repeater name.</string>
+    <string name="tooltip_ip_addr">IP Address of current connected wifi.</string>
+    <string name="tooltip_linkspeed">The current receive link speed in Mbps.</string>
+    <string name="tooltip_freq">The frequency (displayed in GHz) which the client is communicating with the access point.</string>
+    <string name="tooltip_dist">Distance to the Router. What is meant is the beeline without obstacles (approximate).</string>
+    <string name="loop_scan">Loop Scan</string>
+    <string name="loop_delay_repeats">Delay [sec] between repeats</string>
+    <string name="loop_num_of_repeats">Loop Scan: Number of repeats</string>
+</resources>
