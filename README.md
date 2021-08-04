@@ -9,7 +9,7 @@ Instead using the WifiManager.startScan(), it starts and stops immediately the w
 
 |Toolbar|Wifi Results|Wifi Details|
 |-------|------------|------------|
-|![Toolbar](./varia/md_images/toolbar.jpg)|![Wifi Results](./varia/md_images/WifiResults.jpg)
+|![Toolbar](./varia/md_images/toolbar.jpg)|![Wifi Results](./varia/md_images/WifiResults.jpg)|![Wifi Details](./varia/md_images/WifiDetails.jpg)
 
 ## Getting Started
 
