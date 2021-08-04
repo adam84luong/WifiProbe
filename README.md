@@ -8,7 +8,7 @@ The app registers a broadcast listener for the Wifi scanner (WifiManager.EXTRA_R
 Instead using the WifiManager.startScan(), it starts and stops immediately the wifi action panel, that trigger a wifi scan. So there is no limit for number of scan per minute, as with startScan().
 
 Toolbar:
-![Toolbar](./varia/md_images/toolbar.jpg)
+![Toolbar](./varia/md_images/toolbar.jpg) Wifi Results: ![Wifi Results](./varia/md_images/WifiResults.jpg)
 
 ## Getting Started
 
