@@ -7,21 +7,17 @@ WifiProbe scans and displays Wifi access points in your environment.
 The app registers a broadcast listener for the Wifi scanner (WifiManager.EXTRA_RESULTS_UPDATED).
 Instead using the WifiManager.startScan(), it starts and stops immediately the wifi action panel, that trigger a wifi scan. So there is no limit for number of scan per minute, as with startScan().
 
-|Toolbar|Wifi Results|
-|-------|------------|
+|Toolbar|Wifi Results|Wifi Details|
+|-------|------------|------------|
 |![Toolbar](./varia/md_images/toolbar.jpg)|![Wifi Results](./varia/md_images/WifiResults.jpg)
 
 ## Getting Started
 
 ### Dependencies
 
-* None
+* Minimum Android version API 26 (Oreo 8.0), target version API 30 (Android 11)
 
 ### Installing
-
-* 
-
-### Executing program
 
 * 
 
