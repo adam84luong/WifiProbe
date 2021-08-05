@@ -36,11 +36,10 @@ class Scanner(
     private var pass: Int = 0
 
     /** Lookup table with MAC Addresses to Company names */
-    lateinit var macLookupTab: String
+    private lateinit var macLookupTab: String
 
     init {
 
-        //TODO unregisterScanResultsCallback after this class
         /** Broadcast Receiver for Wifi scanner */
         val wifiScanReceiver = object : BroadcastReceiver() {
 

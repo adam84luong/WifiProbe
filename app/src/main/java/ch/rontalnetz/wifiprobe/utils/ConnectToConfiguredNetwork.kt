@@ -93,7 +93,7 @@ class ConnectToConfiguredNetwork : AppCompatActivity() {
         finish()
     }
 
-    fun getConfiguredNetworks(): List<String> {
+    private fun getConfiguredNetworks(): List<String> {
 
         // Request 'Location' Permission at Runtime.
         if (ActivityCompat.checkSelfPermission(
