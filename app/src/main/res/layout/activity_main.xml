@@ -79,7 +79,8 @@
                         android:textSize="10sp"
                         app:layout_constraintLeft_toLeftOf="@id/bnStartScan"
                         app:layout_constraintRight_toRightOf="@id/bnStartScan"
-                        app:layout_constraintTop_toBottomOf="@id/bnStartScan" />
+                        app:layout_constraintTop_toBottomOf="@id/bnStartScan"
+                        tools:ignore="SmallSp" />
 
                     <ProgressBar
                         android:id="@+id/progBarScanning"
@@ -100,7 +101,8 @@
                         android:textSize="10sp"
                         app:layout_constraintBaseline_toBaselineOf="@id/tvStartScanTitle"
                         app:layout_constraintLeft_toLeftOf="@id/progBarScanning"
-                        app:layout_constraintRight_toRightOf="@id/progBarScanning" />
+                        app:layout_constraintRight_toRightOf="@id/progBarScanning"
+                        tools:ignore="SmallSp" />
 
                     <ImageButton
                         android:id="@+id/bnRepeatScan"
@@ -124,7 +126,8 @@
                         android:tooltipText="Repeats the 'Start Scan' 10 times"
                         app:layout_constraintLeft_toLeftOf="@id/bnRepeatScan"
                         app:layout_constraintRight_toRightOf="@id/bnRepeatScan"
-                        app:layout_constraintTop_toBottomOf="@id/bnRepeatScan" />
+                        app:layout_constraintTop_toBottomOf="@id/bnRepeatScan"
+                        tools:ignore="SmallSp" />
 
                     <TextView
                         android:id="@+id/tvWifiIsOffTitle"
