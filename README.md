@@ -23,7 +23,17 @@ Instead using the WifiManager.startScan(), it starts and stops immediately the w
 
 ### Installing
 
-* 
+* Download the unsigned apk from folder: [download_apk](https://github.com/NetVarg/WifiProbe/tree/main/download_apk)
+
+* android.permissions:
+ACCESS_WIFI_STATE
+ACCESS_COARSE_LOCATION
+ACCESS_FINE_LOCATION
+INTERNET
+CHANGE_WIFI_STATE
+ACCESS_NETWORK_STATE
+NETWORK_SETTINGS
+* Allow the app access Location
 
 ## Help
 
