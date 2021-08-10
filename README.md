@@ -25,7 +25,9 @@ Instead using the WifiManager.startScan(), it starts and stops immediately the w
 
 * Download the apk: [download_apk](https://github.com/NetVarg/WifiProbe/blob/main/app/release/app-release.apk)
 
-* Allow device to install package from 'Unknown Sources'
+* Allow device to install package from 'Unknown Sources'.
+
+  > On devices running Android 8.0 (API level 26) and higher, users must navigate to the Install unknown apps system settings screen to enable app installations from a particular source.
 
 * Allow the app access Location
 
