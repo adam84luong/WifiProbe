@@ -85,6 +85,9 @@ class Scanner(
     fun startScan(pass: Int) {
         this.pass = pass
 
+        // TODO: Replace GlobalScope... with the Programming paradigm ViewModel and data.
+        // TODO: The use of GlobalScope.launch is not a good idea!
+
         // Immediately starts and stops the wifi action panel, these trigger a wifi scan.
         // Replacement for the StartScan. There is no limit for number of scan per minute.
         GlobalScope.launch {
